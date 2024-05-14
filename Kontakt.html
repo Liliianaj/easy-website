@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <style>
+    
+        body {
+            background-color: #ffffff;
+            font-family: 'Playfair_Display', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            background-image: url('mamazdj.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 120vh;
+        }
+
+        header {
+            background-color: transparent;
+            padding: 30px;
+            text-align: left;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        header h1 {
+            display: none;
+        }
+
+        .navbar {
+            background-color: transparent;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .navbar a {
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 0;
+            text-decoration: none;
+            width: 14%;
+            float: left;
+            box-sizing: border-box;
+            font-size: 1.5em;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        main {
+            padding: 20px;
+            padding-top: 100px;
+        }
+
+        main section {
+            background-color: transparent;
+            margin-left: 0;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        main h2 {
+            color: #ffffff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        main ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        main li {
+            margin-bottom: 20px;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .side-menu {
+            width: 200px;
+            background-color: #555;
+            color: #fff;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .header-info {
+            background-color: #000000;
+            padding: 15px;
+            text-align: right;
+            position: fixed;
+            top: 0;
+            right: 0;
+            margin: 10px;
+            border-radius: 10px;
+            z-index: 2;
+            cursor: pointer;
+            color: #ffffff;
+            font-size: 1.5em;
+        }
+
+        .header-info a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .contact-info {
+            background-color: rgba(68, 68, 68, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            color: #ffffff;
+            margin-top: 50px;
+        }
+
+        #Lokalizacja {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            background-color: transparent;
+            padding: 20px;
+            border-top: 2px solid transparent;
+        }
+
+        #Lokalizacja iframe {
+            width: 100%; 
+            height: 500px; 
+            border: 2px transparent;
+            border-radius: 8px;
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: #ffffff;
+                font-family: 'Calendas Plus', sans-serif;
+                color: #ffffff;
+                margin: 0;
+                padding: 0;
+                background-image: url('mamamobilna.jpg');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                height: 120vh;
+                display: flex;
+                flex-direction: column;
+            }
+            header {
+                padding: 10px;
+            }
+
+            header h1 {
+                display: none;
+            }
+            .header-title {
+                font-size: 2em;
+            }
+            .navbar {
+                background-color: transparent;
+                overflow: hidden;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+            }
+           
+            .navbar a {
+                display: block;
+                color: #ffffff;
+                text-align: center;
+                padding: 10px 0;
+                text-decoration: none;
+                width: 17%;
+                float: left;
+                box-sizing: border-box;
+                font-size: 0.5em;
+            }
+            .navbar a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            main {
+                padding: 20px;
+                padding-top: 30px;
+            }
+
+            main section {
+                background-color: transparent;
+                margin-left: 0;
+                padding: 20px;
+                color: #ffffff;
+            }
+
+            main h2 {
+                color: #ffffff;
+                font-size: 1.5em;
+                margin-bottom: 10px;
+            }
+
+            main ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            main li {
+                margin-bottom: 20px;
+            }
+
+            .wrapper {
+                display: flex;
+            }
+
+            .content {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .header-info {
+                background-color: #000000;
+                padding: 5px;
+                text-align: right;
+                position: fixed;
+                top: 0;
+                right: 0;
+                margin: 5px;
+                border-radius: 20px;
+                z-index: 3;
+                cursor: pointer;
+                color: #ffffff;
+                font-size: 0.5em;
+            }
+
+            .header-info a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+            .contact-info {
+                background-color: rgba(68, 68, 68, 0.8);
+                padding: 20px;
+                border-radius: 10px;
+                color: #ffffff;
+                margin-top: 50px;
+            }
+            .contact-info {
+                font-size: 100%;
+            }
+
+            .contact-info h2, .contact-info p {
+                font-size: 100%;
+            }
+            #Lokalizacja {
+                position: fixed;
+                bottom: 0;
+                right: 0;
+                background-color: transparent;
+                padding: 20px;
+                border-top: 2px solid transparent;
+            }
+            #Lokalizacja iframe {
+                width: 70%;
+                height: 100px;
+            }
+        }
+    </style>
+    <title>Adwokat Ewa Brodowski</title>
+</head>
+
+<body>
+    <header>
+        <h1>Adwokat Ewa Brodowski</h1>
+        <div class="navbar">
+            <a href="index.html">Strona główna</a>
+            <a href="o_mnie.html">O mnie</a>
+            <a href="zakres_usług.html">Zakres usług</a>
+            <a href="Kontakt.html">Kontakt</a>
+        </div>
+        <div class="header-info">
+            <a href="tel:+48796200575">Zadzwoń: +48 796 200 575</a>
+        </div>
+    </header>
+
+    <main>
+       
+        <div class="contact-info">
+            <h2>Siedziba Kancelarii</h2>
+            <p>Kancelaria Adwokacka Adwokat Ewa Brodowski</p>
+            <p>ul. Grabowskiego 7</p>
+            <p>58-500 Jelenia Góra</p>
+            <h2>Godziny otwarcia</h2>
+            <p>poniedziałek-piątek</p>
+            <p>8.00-16.00</p>
+            <h2>Telefon</h2>
+            <p>+48 796 200 575</p>
+            <h2>Email</h2>
+            <p>ewa.brodowski@adwokatura.pl</p>
+        </div>
+
+        <section id="Lokalizacja">
+            <iframe
+                width="100%"
+                height="500"
+                frameborder="0"
+                style="border:0"
+                allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?q=Grabowskiego+7,Jelenia+Góra&key=AIzaSyCiaXFS0QfxzFLNicj3kk6mVn_nS9XGors"
+            ></iframe>
+        </section>
+    </main>
+</body>
+
+</html>
